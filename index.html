@@ -668,59 +668,25 @@
                         <h2 class="text-3xl font-serif font-bold">Book Appointment</h2>
                         <p class="opacity-90">Secure your session in seconds.</p>
                     </div>
-                    <div class="p-8 md:p-12">
-                        <form onsubmit="event.preventDefault(); alert('Request submitted! We will call you at the provided number to confirm.');">
-                            
-                            <!-- Personal Info -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label class="block text-gray-700 font-bold mb-2">Name</label>
-                                    <input type="text" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-swiss-green" placeholder="John Doe" required>
-                                </div>
-                                <div>
-                                    <label class="block text-gray-700 font-bold mb-2">Phone</label>
-                                    <input type="tel" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-swiss-green" placeholder="(626) 342-5069" required>
-                                </div>
-                            </div>
+                    <div class="p-12 md:p-20 flex flex-col items-center justify-center text-center">
+                        <div class="mb-8 max-w-lg mx-auto">
+                            <i class="fas fa-calendar-check text-5xl text-swiss-green mb-4"></i>
+                            <p class="text-gray-600 text-lg">
+                                Ready to relax? Click the button below to view our real-time availability and schedule your appointment instantly.
+                            </p>
+                        </div>
+                        
+                        <!-- Setmore Integration Code -->
+                        <div class="transform hover:scale-105 transition-transform duration-300">
+                            <script id='setmore_script' type='text/javascript' src='https://assets.setmore.com/integration/static/setmoreIframeLive.js'></script>
+                            <a style='float:none;' id='Setmore_button_iframe' href='https://swissmassageskincare.setmore.com'>
+                                <img border='none' src='https://assets.setmore.com/setmore/images/2.0/Settings/book-now-black.svg' alt='Click here to book the appointment using setmore' />
+                            </a>
+                        </div>
 
-                            <!-- Service Selection -->
-                            <div class="mb-6">
-                                <label class="block text-gray-700 font-bold mb-2">Service Type</label>
-                                <select class="w-full bg-gray-50 border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-swiss-green">
-                                    <option>Select a Service...</option>
-                                    <option value="first_time_60">First Time Special - Massage 60m ($50)</option>
-                                    <option value="first_time_90">First Time Special - Massage 90m ($70)</option>
-                                    <option value="combo">Combo: 1Hr Facial + 30m Massage ($90)</option>
-                                    <option disabled>--- Standard Massage ---</option>
-                                    <option>Body Massage 60m ($60)</option>
-                                    <option>Body Massage 90m ($100)</option>
-                                    <option>Deep Tissue 60m ($70)</option>
-                                    <option disabled>--- Facial ---</option>
-                                    <option>Full Facial 90m ($138)</option>
-                                    <option>Mini Facial 40m ($100)</option>
-                                    <option>Acne Treatment ($100)</option>
-                                </select>
-                            </div>
-
-                            <!-- Therapist & Time -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                                <div>
-                                    <label class="block text-gray-700 font-bold mb-2">Preferred Therapist</label>
-                                    <select class="w-full bg-gray-50 border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-swiss-green">
-                                        <option>No Preference (Earliest Available)</option>
-                                        <option>Linda (Deep Tissue)</option>
-                                        <option>Mary (Facial Specialist)</option>
-                                        <option>John (Strong Pressure)</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="block text-gray-700 font-bold mb-2">Preferred Date & Time</label>
-                                    <input type="datetime-local" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-swiss-green">
-                                </div>
-                            </div>
-
-                            <button type="submit" class="w-full bg-swiss-dark text-white font-bold py-4 rounded-lg hover:bg-swiss-green transition duration-300">Confirm Booking Request</button>
-                        </form>
+                        <p class="mt-8 text-sm text-gray-400">
+                            Powered by Setmore Secure Booking
+                        </p>
                     </div>
                 </div>
             </div>
